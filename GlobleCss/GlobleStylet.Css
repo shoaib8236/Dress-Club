@@ -5,6 +5,7 @@
 }
 
 body{
+    background-image: url(../Assets/bg.webp);
     background-size: cover;
     background-attachment: fixed;
 }
