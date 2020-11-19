@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../Assets/bg.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+button:focus{
+    outline: none;
+    border: none;
+}
+
+p{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+li{
+    list-style: none;
+}
+
+/* Navbaar Starts, */
+
+.topHeader{
+    /* background-color: #eee;  */
+    background:rgba(255,255,255, 0.8);
+}
+
+.topHeader i img {
+    /* transform: translateX(); */
+    animation:  both 2s infinite  ease-in-out;
+    animation-name: Logo;
+}
+
+@keyframes Logo {
+    0%{
+    transform: translatey(-4px);
+    }
+
+    50%{
+    transform: translatey(0px);
+    }
+
+    100%{
+    transform: translatey(-4px);
+        
+    }
+}
+
+
+
+.Navbar{
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
+    box-shadow: 0px 0px 20px 5px #eee;
+    text-align: center;
+}
+
+.Navbar .NavLinks{
+    color: #000;
+    margin: 0 20px;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.3s all;
+    position: relative;
+}
+
+.Navbar .NavLinks::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: #009432;
+    height: 2px;
+    width: 0px;
+    transition: 0.2s;
+}
+
+.Navbar .NavLinks:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.Navbar .NavLinks:hover{
+    color: #009432;
+}
+
+/* Navbaar End, */
+
+
+
